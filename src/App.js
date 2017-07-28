@@ -9,8 +9,14 @@ class App extends Component {
   {
     super();
     this.state = {
-      projects:[
-        {
+      projects:[]
+
+    }
+  }
+  
+  componentWillMount(){
+    this.setState({
+      projects:[{
           title:'Business Website',
           category:'Business Website'
         },
@@ -21,12 +27,9 @@ class App extends Component {
         {
           title:'Ecommerce Shopping Cart',
           category:'Web Development'
-        }
-      ]
-
-    }
+        }]
+    });
   }
-  
   
   render() {
     return (
